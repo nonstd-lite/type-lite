@@ -1383,4 +1383,13 @@ CASE( "macro: type_DEFINE_FUNCTION_CE(Strong, StrongFunction, function)" )
     EXPECT( ( S::negate( S::Integer(7) ) == S::Integer(-7) ) );
 }
 
+CASE( "tweak header: reads tweak header if supported " "[tweak]" )
+{
+#if type_HAVE_TWEAK_HEADER
+    EXPECT( TYPE_TWEAK_VALUE == 42 );
+#else
+    EXPECT( !!"Tweak header is not available (type_HAVE_TWEAK_HEADER: 0)." );
+#endif
+}
+
 } // anonymous namespace

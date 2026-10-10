@@ -18,6 +18,16 @@
 #define type_STRINGIFY(  x )  type_STRINGIFY_( x )
 #define type_STRINGIFY_( x )  #x
 
+// tweak header support:
+
+#if defined(__has_include) && __has_include(<nonstd/type.tweak.hpp>)
+# include <nonstd/type.tweak.hpp>
+# define type_HAVE_TWEAK_HEADER  1
+#else
+# define type_HAVE_TWEAK_HEADER  0
+//# pragma message("type.hpp: Note: Tweak header not supported.")
+#endif
+
 // nonstd type configuration:
 
 // (none)

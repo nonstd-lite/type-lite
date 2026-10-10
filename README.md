@@ -440,6 +440,7 @@ macro: type_DEFINE_SUBTYPE(Sub, Super)
 macro: type_DEFINE_SUBTYPE_ND(Sub, Super)
 macro: type_DEFINE_FUNCTION(Strong, StrongFunction, function)
 macro: type_DEFINE_FUNCTION_CE(Strong, StrongFunction, function)
+tweak header: reads tweak header if supported [tweak]
 ```
 
 </p>

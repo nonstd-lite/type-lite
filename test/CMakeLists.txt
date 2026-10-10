@@ -15,6 +15,7 @@ set( unit_name "type" )
 set( PACKAGE   ${unit_name}-lite )
 set( PROGRAM   ${unit_name}-lite )
 set( SOURCES   ${unit_name}-main.t.cpp ${unit_name}.t.cpp )
+set( TWEAKD    "." )
 
 message( STATUS "Subproject '${PROJECT_NAME}', programs '${PROGRAM}-*'")
 
