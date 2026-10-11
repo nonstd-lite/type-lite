@@ -17,7 +17,7 @@ Put a copy of [`type-lite.hpp`](include/type-lite.hpp) located in folder [includ
 In project root folder:
 
 ```CMake
-cmake_minimum_required( VERSION 3.5 FATAL_ERROR )
+cmake_minimum_required( VERSION 3.15 FATAL_ERROR )
 
 project( use-type-lite LANGUAGES CXX )
 
@@ -35,7 +35,7 @@ add_subdirectory( src )
 In folder src:
 
 ```CMake
-cmake_minimum_required( VERSION 3.5 FATAL_ERROR )
+cmake_minimum_required( VERSION 3.15 FATAL_ERROR )
 
 project( program-using-type-lite LANGUAGES CXX )
 
@@ -54,7 +54,7 @@ As external Git project
 Another approach is to automatically fetch the entire *type-lite* repository from github and configure it as an external project.
 
 ```CMake
-cmake_minimum_required( VERSION 3.5 FATAL_ERROR )
+cmake_minimum_required( VERSION 3.15 FATAL_ERROR )
 
 project( use-type-lite LANGUAGES CXX )
 
@@ -93,7 +93,7 @@ add_subdirectory( src )
 
 In folder src:
 ```CMake
-cmake_minimum_required( VERSION 3.5 FATAL_ERROR )
+cmake_minimum_required( VERSION 3.15 FATAL_ERROR )
 
 project( program-using-type-lite LANGUAGES CXX )
 
@@ -123,7 +123,7 @@ As CMake package
 2. Next, you can use the *type-lite* CMake package, for example:
 
 	```CMake
-	cmake_minimum_required( VERSION 3.5 FATAL_ERROR )
+	cmake_minimum_required( VERSION 3.15 FATAL_ERROR )
 	
 	find_package( type-lite "0.2" REQUIRED )
 	
