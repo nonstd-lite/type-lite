@@ -239,6 +239,10 @@ inline std::ostream & operator<<( std::ostream & os, nonstd::type<T,Tag,D> const
 
 There are no configuration flags currently.
 
+#### Tweak header
+
+If the compiler supports [`__has_include()`](https://en.cppreference.com/w/cpp/preprocessor/include), *type lite* supports the [tweak header](https://vector-of-bool.github.io/2020/10/04/lib-configuration.html) mechanism. Provide your *tweak header* as `nonstd/type.tweak.hpp` in a folder in the include-search-path. In the tweak header, provide definitions as documented below, like `#define type_CONFIG_EXAMPLE 123`.
+
 ## Reported to work with
 
 The table below mentions the compiler versions *type lite* is reported to work with.
